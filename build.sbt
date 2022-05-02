@@ -17,6 +17,7 @@ val munitCatsEffectVersion = "1.0.7"
 lazy val twirl = project
   .in(file("twirl"))
   .settings(
+    name := "http4s-twirl",
     description := "Twirl template support for http4s",
     startYear := Some(2014),
     TwirlKeys.templateImports := Nil,
