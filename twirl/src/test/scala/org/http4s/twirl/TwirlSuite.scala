@@ -18,6 +18,8 @@ package org.http4s
 package twirl
 
 import cats.effect.IO
+import cats.syntax.all._
+import munit.CatsEffectSuite
 import org.http4s.Status.Ok
 import org.http4s.headers.`Content-Type`
 import org.scalacheck.Arbitrary
@@ -29,7 +31,11 @@ import play.twirl.api.JavaScript
 import play.twirl.api.Txt
 import play.twirl.api.Xml
 
-class TwirlSuite extends Http4sSuite {
+class TwirlSuite extends CatsEffectSuite {
+  implicit class ParseResultSyntax[A](self: ParseResult[A]) {
+    def yolo: A = self.valueOr(e => sys.error(e.toString))
+  }
+
   implicit val arbCharset: Arbitrary[Charset] = Arbitrary {
     Gen.oneOf(
       Charset.`UTF-8`,
