@@ -4,7 +4,7 @@ ThisBuild / developers := List(
 )
 
 val Scala213 = "2.13.9"
-ThisBuild / crossScalaVersions := Seq(Scala213)
+ThisBuild / crossScalaVersions := Seq(Scala213, "3.2.1")
 ThisBuild / scalaVersion := Scala213
 
 lazy val root = project.in(file(".")).aggregate(twirl).enablePlugins(NoPublishPlugin)
