@@ -5,12 +5,12 @@ ThisBuild / developers := List(
 )
 
 val Scala213 = "2.13.10"
-ThisBuild / crossScalaVersions := Seq("2.12.17", Scala213)
+ThisBuild / crossScalaVersions := Seq("2.12.18", Scala213)
 ThisBuild / scalaVersion := Scala213
 
 lazy val root = project.in(file(".")).aggregate(twirl).enablePlugins(NoPublishPlugin)
 
-val http4sVersion = "0.23.19"
+val http4sVersion = "0.23.20"
 val munitVersion = "0.7.29"
 val munitCatsEffectVersion = "2.0.0-M3"
 
