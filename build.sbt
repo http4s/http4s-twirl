@@ -12,7 +12,7 @@ lazy val root = project.in(file(".")).aggregate(twirl).enablePlugins(NoPublishPl
 
 val http4sVersion = "0.23.26"
 val munitVersion = "0.7.29"
-val munitCatsEffectVersion = "2.0.0-M3"
+val munitCatsEffectVersion = "2.0.0-M5"
 
 lazy val twirl = project
   .in(file("twirl"))
