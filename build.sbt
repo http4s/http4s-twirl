@@ -3,8 +3,9 @@ ThisBuild / tlMimaPreviousVersions ++= (0 to 11).map(y => s"0.23.$y").toSet
 ThisBuild / developers := List(
   tlGitHubDev("rossabaker", "Ross A. Baker")
 )
+ThisBuild / startYear := Some(2014)
 
-val Scala213 = "2.13.11"
+val Scala213 = "2.13.14"
 ThisBuild / crossScalaVersions := Seq("2.12.19", Scala213)
 ThisBuild / scalaVersion := Scala213
 
@@ -19,7 +20,6 @@ lazy val twirl = project
   .settings(
     name := "http4s-twirl",
     description := "Twirl template support for http4s",
-    startYear := Some(2014),
     TwirlKeys.templateImports := Nil,
     libraryDependencies ++= Seq(
       "org.http4s" %%% "http4s-core" % http4sVersion,
