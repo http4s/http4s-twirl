@@ -1,2 +1,2 @@
 addSbtPlugin("org.http4s" % "sbt-http4s-org" % "0.18.0")
-addSbtPlugin("com.typesafe.play" % "sbt-twirl" % "1.6.8")
+addSbtPlugin("org.playframework.twirl" % "sbt-twirl" % "2.0.7")
