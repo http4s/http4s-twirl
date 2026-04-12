@@ -12,7 +12,7 @@ ThisBuild / scalaVersion := Scala213
 lazy val root = project.in(file(".")).aggregate(twirl).enablePlugins(NoPublishPlugin)
 
 val http4sVersion = "0.23.33"
-val munitVersion = "1.2.0"
+val munitVersion = "1.3.0"
 val munitCatsEffectVersion = "2.2.0"
 
 lazy val twirl = project
