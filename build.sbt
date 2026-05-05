@@ -4,15 +4,15 @@ ThisBuild / developers := List(
 )
 ThisBuild / startYear := Some(2014)
 
-val Scala213 = "2.13.16"
-ThisBuild / crossScalaVersions := Seq("2.12.20", Scala213, "3.3.6")
+val Scala213 = "2.13.18"
+ThisBuild / crossScalaVersions := Seq("2.12.21", Scala213, "3.3.6")
 ThisBuild / scalaVersion := Scala213
 
 lazy val root = project.in(file(".")).aggregate(twirl).enablePlugins(NoPublishPlugin)
 
-val http4sVersion = "0.23.30"
-val munitVersion = "1.1.0"
-val munitCatsEffectVersion = "2.1.0"
+val http4sVersion = "0.23.34"
+val munitVersion = "1.3.0"
+val munitCatsEffectVersion = "2.2.0"
 
 lazy val twirl = project
   .in(file("twirl"))
