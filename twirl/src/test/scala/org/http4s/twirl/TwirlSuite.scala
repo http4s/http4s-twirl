@@ -112,5 +112,4 @@ class TwirlSuite extends CatsEffectSuite {
         .assertEquals(Right("<test>test xml</test>"))
     }
   }
-
 }
