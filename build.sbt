@@ -2,6 +2,7 @@ ThisBuild / tlBaseVersion := "1.0"
 ThisBuild / developers := List(
   tlGitHubDev("rossabaker", "Ross A. Baker")
 )
+ThisBuild / startYear := Some(2014)
 
 val Scala213 = "2.13.18"
 ThisBuild / crossScalaVersions := Seq(Scala213, "3.3.8")
@@ -18,7 +19,6 @@ lazy val twirl = project
   .settings(
     name := "http4s-twirl",
     description := "Twirl template support for http4s",
-    startYear := Some(2014),
     TwirlKeys.templateImports := Nil,
     libraryDependencies ++= Seq(
       "org.http4s" %%% "http4s-core" % http4sVersion,
