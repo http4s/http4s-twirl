@@ -3,15 +3,15 @@ ThisBuild / developers := List(
   tlGitHubDev("rossabaker", "Ross A. Baker")
 )
 
-val Scala213 = "2.13.10"
-ThisBuild / crossScalaVersions := Seq(Scala213, "3.3.0")
+val Scala213 = "2.13.18"
+ThisBuild / crossScalaVersions := Seq(Scala213, "3.3.8")
 ThisBuild / scalaVersion := Scala213
 
 lazy val root = project.in(file(".")).aggregate(twirl).enablePlugins(NoPublishPlugin)
 
-val http4sVersion = "1.0.0-M44"
-val munitVersion = "0.7.29"
-val munitCatsEffectVersion = "2.0.0-M3"
+val http4sVersion = "1.0.0-M48"
+val munitVersion = "1.3.1"
+val munitCatsEffectVersion = "2.2.1"
 
 lazy val twirl = project
   .in(file("twirl"))
