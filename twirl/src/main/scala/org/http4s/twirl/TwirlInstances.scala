@@ -17,7 +17,7 @@
 package org.http4s
 package twirl
 
-import _root_.play.twirl.api.*
+import _root_.play.twirl.api._
 import org.http4s.Charset.`UTF-8`
 import org.http4s.MediaType
 import org.http4s.headers.`Content-Type`
